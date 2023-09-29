@@ -25,6 +25,12 @@
         </template>
       </ul>
     </div>
+    <div class="flex flex-col gap-4">
+      <Suspense>
+        <CityList />
+        <template #fallback>Loading </template>
+      </Suspense>
+    </div>
   </main>
 </template>
 
